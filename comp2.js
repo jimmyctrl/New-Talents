@@ -11,6 +11,15 @@ class vacant{
         this.age = age
         this.profession = profession
     }
+
+    getvacantes(){
+        return this.name
+    }
+
+    getprofession(){
+        return this.profession
+    }
+
     information(){
         return `El candidato ${this.name} de apellido ${this.lastName}, se desempenia en el rol de ${this.profession}, su edad es ${this.age} anios, y ya se encuentra inscrito dentro de las vacantes de la empresa.`
     }
@@ -30,15 +39,32 @@ while(vacancies.length < 2){
     }
 }
 
-const showAllvacacines = () => {
-    for(const vacant of vacancies)
-    console.log(vacant.information());
-}
-
-const showAllvacant = () =>{
+const showAllvacancines = () => {
     console.log(vacancies);
 }
 
+const showVacants = () => {
+    let vacantArray = []
 
-showAllvacacines();
-showAllvacant();
+    for(const vacante of vacancies){
+        vacantArray.push(vacante.getvacantes());
+    }
+    console.log(vacantArray.sort()); // regresar alfabeticamente con los nombres ingresados
+}
+
+const showProfession = () => {
+    const vacant1 = prompt("Introduce la profesion para que salgan los perfiles inscritos")
+    for(const vacante of vacancies){
+        if(vacante.getprofession() == vacant1){
+            console.log(vacante.information());
+        }
+    }
+    
+}
+
+console.log("Todos los datos personales");
+showAllvacancines();
+console.log("Nombres alfabeticamente");
+showVacants();
+console.log("Filtro con datos de las personas que se encontraron por profesion");
+showProfession();

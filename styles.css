@@ -10,7 +10,7 @@ body{
     height: 100vh;
 }
 
-.form-register{
+.formregister{
     width: 400px;
     background: #141726;
     padding: 30px;
@@ -22,7 +22,7 @@ body{
     box-shadow: 7px 12px 30px #2C364B;
 }
 
-.form-register h4 {
+.formregister h4 {
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
@@ -36,32 +36,33 @@ body{
     margin-bottom: 16px;
     border: 1px solid #036DD2;
     font-family: 'calibri';
+    color: white;
 }
 
 ::placeholder{
     color: #9D9D9D;
 }
 
-.form-register p{
+.formregister p{
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
 }
 
-.form-register a{
+.formregister a{
     color: white;
     text-decoration: none;
 }
 
-.form-register a:hover {
+.formregister a:hover {
     color: #1166B8;
 }
 
-.form-register .botons:hover{
+.formregister .botons:hover{
     background-color: #036DD2;
 }
-.form-register .botons {
+.formregister .botons {
     width: 100%;
     background-color: #1545A6;
     border: none;

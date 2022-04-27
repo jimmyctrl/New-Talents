@@ -11,10 +11,31 @@
 </head>
 <body>
 
-    <section id="form1">
-        <form class="formregister" id="formulario">
-            <h4>Formulario Registro</h4>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+
+                    <ul>
+                        <li><a href="#" id="selected">Inicio</a></li>
+                        <li><a href="#">Vacantes</a></li>
+                        <li><a href="./pages/registrate.html">Registrate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <article id="form1">
+            <form class="formregister" id="formulario">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
             <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
             <input class="controls" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
             <input class="controls" type="text" name="profesion" id="profesion" placeholder="Ingrese su profesion">
@@ -22,8 +43,9 @@
             <input class="botons" type="submit" value="Registrar">
             <p><a href="">¿Olvido su contraseña?</a></p>
         </form>
-    </section>
+    </article>
     
-    <script src="comp2.js"></script>
+    </section>
+    <script src="../scripts/form.js"></script>
 </body>
 </html>

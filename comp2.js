@@ -18,30 +18,22 @@ form.addEventListener('submit', function(event){
     console.log(mailprofesion);
 })
 
+//accion menu 
+document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
-    function abrirRegistro(){
-        document.querySelector("#form1").style.display = "block";
-        document.querySelector("#menu").style.display = "none";
-    }
-    document.querySelector("#registrate").addEventListener("click",abrirRegistro);
+document.getElementById("back_menu").addEventListener("click", ocultar_menu);
 
+nav = document.getElementById("nav");
+background_menu = document.getElementById("back_menu");
 
-const iconoMenu = document.querySelector('#icono-menu'),
-    menu = document.querySelector('#menu');
+function mostrar_menu(){
 
-iconoMenu.addEventListener('click', (e) => {
+    nav.style.right = "0px";
+    background_menu.style.display = "block";
+}
 
-    // Alternamos estilos para el menu y body
-    menu.classList.toggle('active');
-    document.body.classList.toggle('opacity');
+function ocultar_menu(){
 
-    // Alternamos su atributo 'src' para el ícono del menú
-    const rutaActual = e.target.getAttribute('src');
-
-    if(rutaActual == 'assets/open-menu.png'){
-        e.target.setAttribute('src','assets/open-menu2.png');
-    }else{
-        e.target.setAttribute('src','assets/open-menu.png');
-    }
-});
-
+    nav.style.right = "-250px";
+    background_menu.style.display = "none";
+}

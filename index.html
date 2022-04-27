@@ -5,36 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Talents</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="utils/styles.css">
 </head>
 <body>
     
-    <div class="icono-menu">
-        <img src="assets/open-menu.png" id="icono-menu">
-    </div>
+    <header>
 
-    <div class="cont-menu active" id="menu">
-        <ul>
-            <li> Inicio </li>
-            <li> Sobre nosotros </li>
-            <li> Vacantes </li>
-            <li> Contacto </li>
-            <li id="registrate"> Registrate </li>
-        </ul>
-    </div>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <img src="" alt="">
+                    <ul>
+                        <li><a href="#" id="selected">Inicio</a></li>
+                        <li><a href="#">Vacantes</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contactos</a></li>
+                        <li><a href="./pages/registrate.html">Registrate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-    <section id="form1">
+    </header>
+
+    <main>
+        <div class="container__cover">
+            <div class="cover">
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, magni nemo!  </h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quo nostrum eligendi sequi iste quae voluptates assumenda nemo odit cum!</p>
+
+                    <input type="button" value="Leer Más">
+                </div>
+
+                <div class="svg">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+  
         <form class="formregister" id="formulario">
-            <h4>Formulario Registro</h4>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
-            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
-            <input class="controls" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
-            <input class="controls" type="text" name="profesion" id="profesion" placeholder="Ingrese su profesion">
-            <p>Estoy deacuerdo con <a href="">Terminos y condiciones</a></p>
-            <input class="botons" type="submit" value="Registrar">
-            <p><a href="">¿Olvido su contraseña?</a></p>
         </form>
-    </section>
+        
     <script src="comp2.js"></script>
 </body>
 </html>

@@ -126,16 +126,16 @@ header{
 .container__cover{
     width: 100%;
     height: 500px;
-    background-position: right;
+    background-position: cover;
     background-repeat: no-repeat;
 }
 
 .cover{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+    max-width: 500px;
+    padding: 20px;
     display: flex;
-    align-items: center;
+    margin:50px;
+    margin-top: -2px;
     justify-content: space-between;
 }
 

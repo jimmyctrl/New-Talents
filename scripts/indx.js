@@ -1,3 +1,5 @@
+//inicializacion libreria AOS
+AOS.init();
 //accion menu 
 document.querySelector("#btn_menu").addEventListener("click", mostrar_menu);
 
@@ -29,3 +31,4 @@ function mouseOver(){
 function mouseOut(){
     document.getElementById("change").style.fontSize = "18px";
 }
+

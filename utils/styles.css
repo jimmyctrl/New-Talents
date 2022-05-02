@@ -249,9 +249,20 @@ header{
 }
 
 .nosotros{
-    background-color: #1166B8;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    width: 70%; /* 700% en responsive, oroginal = 500px*/
+    padding: 30px;
+    width: 600px;/* 70% en responsive, oroginal = 500px*/
+    height: 350px;
+    font-size: 18px;
 }
+.imgp1{
+    height: 320px;
+}
+.fotoo{
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*Footer*/

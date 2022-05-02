@@ -17,3 +17,15 @@ function ocultar_menu(){
     nav.style.right = "-250px";
     background_menu.style.display = "none";
 }
+
+//tamaniobott
+
+document.getElementById("change").addEventListener("mouseover", mouseOver);
+document.getElementById("change").addEventListener("mouseout", mouseOut);
+
+function mouseOver(){
+    document.getElementById("change").style.fontSize = "22px";
+}
+function mouseOut(){
+    document.getElementById("change").style.fontSize = "18px";
+}

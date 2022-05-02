@@ -247,3 +247,11 @@ header{
         background: rgba(255, 255, 255, 0.7);
     }
 }
+
+.nosotros{
+    background-color: #1166B8;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 70%; /* 700% en responsive, oroginal = 500px*/
+}
